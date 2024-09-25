@@ -47,7 +47,8 @@
             <div class="card-body">
             <p class="card-text mt-2">
                 <b><%= listing.title %> </b> <br>
-                <b>&#8377;<%=  listing.price.toLocaleString("en-IN") %></b> <i class="tax-info">&nbsp;&nbsp; + 18% GST </i>
+                <b>&#8377;<%=  listing.price.toLocaleString("en-IN") %></b> 
+                <i class="tax-info">&nbsp;&nbsp; + 18% GST &nbsp; = <b> <%= (listing.price * 1.18).toLocaleString("en-IN") %> </b></i>
             </p>
             </div>
         </div>
